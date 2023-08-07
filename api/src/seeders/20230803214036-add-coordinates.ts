@@ -8,7 +8,7 @@ const COORDINATES = [
   },
   {
     latitude: 20.7078664,
-    longitude: 103.4825146,
+    longitude: -103.4485256,
   },
 ];
 

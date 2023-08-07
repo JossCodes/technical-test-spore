@@ -38,6 +38,8 @@ DB_USERNAME=tu_usuario_de_postgres
 DB_PASSWORD=tu_contraseña_de_postgres
 ```
 
+Es importante que te asegures que estas credenciales sean correctas ya que de eso dependerá que el proyecto pueda ejecutarse adecuadamente.
+
 ## Instalación
 
 Ejecuta el siguiente comando para instalar las dependencias del proyecto:
@@ -49,6 +51,12 @@ $ npm run install:all
 Este comando instalará las dependencias tanto para la API (backend) como para el cliente (frontend).
 
 ## Build y migraciones
+
+Ejecuta el siguiente comando para construir tanto el cliente como el api:
+
+```sh
+$ npm run build:all
+```
 
 Antes de iniciar el proyecto, debes realizar las migraciones y los seeders necesarios. Estos pasos también crearán dos usuarios:
 
@@ -67,10 +75,10 @@ Antes de iniciar el proyecto, debes realizar las migraciones y los seeders neces
 Para realizar estas operaciones, ejecuta el siguiente comando:
 
 ```sh
-$ npm run build:all
+$ npm run setupDB
 ```
 
-Este comando ejecutará las migraciones y seeders, y construirá tanto la API como el cliente.
+Este comando ejecutará las migraciones y seeders.
 
 ## Iniciar el proyecto
 

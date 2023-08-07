@@ -2,6 +2,7 @@
     "name": "technical-test-spore",
     "version": "1.0.0",
     "scripts": {
+      "install:all": "npm install --prefix api && npm install --prefix client",
       "build:api": "cd api && npm run build",
       "build:client": "cd client && npm run build",
       "setupDB": "cd api && npm run migrate && npm run seed",

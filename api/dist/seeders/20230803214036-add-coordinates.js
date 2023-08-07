@@ -15,12 +15,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const Coordinates_1 = __importDefault(require("../models/Coordinates"));
 const COORDINATES = [
     {
-        latitude: 37.7749,
-        longitude: -122.4194,
+        latitude: 20.6450459,
+        longitude: -103.4936385,
     },
     {
-        latitude: 40.7128,
-        longitude: -74.006,
+        latitude: 20.6747883,
+        longitude: -103.440668,
     },
 ];
 module.exports = {

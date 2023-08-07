@@ -3,12 +3,12 @@ import Coordinates from "../models/Coordinates";
 
 const COORDINATES = [
   {
-    latitude: 20.6450459,
-    longitude: -103.4936385,
+    latitude: 20.6747883,
+    longitude: -103.440668,
   },
   {
-    latitude: 20.7078714,
-    longitude: -103.4129917,
+    latitude: 20.7078664,
+    longitude: 103.4825146,
   },
 ];
 

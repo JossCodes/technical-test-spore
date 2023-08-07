@@ -1,0 +1,13 @@
+{
+    "name": "technical-test-spore",
+    "version": "1.0.0",
+    "scripts": {
+      "build:api": "cd api && npm run build",
+      "build:client": "cd client && npm run build",
+      "setupDB": "cd api && npm run migrate && npm run seed",
+      "build:all": "npm run setupDB & npm run build:api & npm run build:client",
+      "start:api": "cd api && npm start",
+      "start:client": "cd client && npm start"
+    }
+  }
+  

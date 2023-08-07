@@ -17,18 +17,20 @@ const User_1 = __importDefault(require("../models/User"));
 const Coordinates_1 = __importDefault(require("../models/Coordinates"));
 const VEHICLES = [
     {
-        name: "Mi carro",
-        brand: "Toyota",
+        name: "Mi carro eléctrico",
+        brand: "Testla",
         plates: "ABC123",
         color: "Rojo",
-        model: "Corolla",
+        model: "Model 3",
+        image: "https://www.tesla.com/sites/default/files/model3-new/social/model-3-hero-social.jpg",
     },
     {
-        name: "Mi moto",
-        brand: "Honda",
+        name: "Mi Automovil",
+        brand: "Maserait",
         plates: "XYZ789",
         color: "Negro",
-        model: "CBR",
+        model: "Levante",
+        image: "https://www.maseratimexico.com/img/navbar/LEVANTE-nav.jpeg",
     },
 ];
 module.exports = {

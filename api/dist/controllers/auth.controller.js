@@ -51,7 +51,7 @@ const AuthController = {
                 id: user.id,
                 email,
                 name,
-                roleId: user.roleId,
+                role: userRole,
             });
             // Return success response with token
             return res
@@ -73,7 +73,10 @@ const AuthController = {
                 });
             }
             // Verify if the user exists
-            const user = yield User_1.default.findOne({ where: { email } });
+            const user = yield User_1.default.findOne({
+                where: { email },
+                include: { model: Role_1.default, as: "role" },
+            });
             if (!user) {
                 return res.status(400).json({
                     error: `A user with the email '${email}' doesn't exists`,
@@ -84,12 +87,17 @@ const AuthController = {
             if (!isPasswordCorrect) {
                 return res.status(400).json({ error: "Incorrect password" });
             }
+            if (!user.role) {
+                return res.status(400).json({
+                    error: "User doesn't have a role, please contact the administrator",
+                });
+            }
             // Generate token
             const token = (0, tools_1.generateToken)({
                 id: user.id,
                 email,
                 name: user.name,
-                roleId: user.roleId,
+                role: user.role,
             });
             // Return success response with token
             return res

@@ -6,7 +6,7 @@ import Coordinates from "../models/Coordinates";
 const VEHICLES = [
   {
     name: "Mi carro eléctrico",
-    brand: "Testla",
+    brand: "Tesla",
     plates: "ABC123",
     color: "Rojo",
     model: "Model 3",
